@@ -6,7 +6,7 @@
 
 .menu {
     font-family: "Inter", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .menu-group-heading {
@@ -17,7 +17,7 @@
 
 .menu-group {
     display:grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5em;
     padding: 1.5em 0;
 }
@@ -27,8 +27,8 @@
 }
 
 .menu-item-image {
-    width: 80px;
-    height: 80px;
+    width: 125px;
+    height: 125px;
     flex-shrink: 0;
     object-fit: cover;
     margin-right: 1.5em;
@@ -52,15 +52,4 @@
     line-height: 1.6em;
 }
 
-@media screen and (min-width: 992px) {
-    .menu {
-        font-size: 16px;
-    }
-    .menu-group {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .menu-item-image {
-        width: 125px;
-        height: 125px;
-    }
-}
+
